@@ -1,4 +1,4 @@
-# gRPC-Go
+gRPC-Go
 
 [![GoDoc](https://pkg.go.dev/badge/google.golang.org/grpc)][API]
 [![GoReportCard](https://goreportcard.com/badge/grpc/grpc-go)](https://goreportcard.com/report/github.com/grpc/grpc-go)
