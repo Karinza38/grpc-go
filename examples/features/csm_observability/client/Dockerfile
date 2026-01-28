@@ -27,7 +27,7 @@ COPY . .
 # final image, and can get rid of the Go compiler and gRPC-Go dependencies.
 RUN cd examples/features/csm_observability/client && go build -tags osusergo,netgo .
 
-FROM alpine
+FROM alpine:3.23.3
 RUN apk --no-cache add curl
 COPY --from=build /go/src/grpc-go/examples/features/csm_observability/client/client .
 ENV GRPC_GO_LOG_VERBOSITY_LEVEL=99
